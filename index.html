@@ -150,7 +150,7 @@ const createChatLi = (message, className, isSuggestion = false, imageUrl = null)
             body: JSON.stringify({ message: message })
         };
 
-        return fetch('https://chatwithpdf.astroverse/api/generate-response', requestOptions)
+        return fetch('https://chatwithpdf.astroverse.in/api/generate-response', requestOptions)
             .then(response => response.json())
             .catch(error => console.error('Error:', error));
     };
